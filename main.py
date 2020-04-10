@@ -1,4 +1,5 @@
 import requests
 
-print('Hello World!')
-print('Привет мир!')
+ip = requests.get("https://api.ipify.org").text
+print('Мой ip адрес: {}'.format(ip))
+
